@@ -1,0 +1,5 @@
+# Runtime (the web app). The command-line scripts need only the standard library.
+starlette>=0.40
+pydantic>=2.5
+uvicorn>=0.30
+python-multipart>=0.0.9   # file uploads (multipart/form-data)

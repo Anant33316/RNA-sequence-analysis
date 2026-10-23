@@ -1,0 +1,93 @@
+{
+  "type": "NFA",
+  "name": "3rd symbol from the end is G",
+  "states": [
+    "p0",
+    "p1",
+    "p2",
+    "p3"
+  ],
+  "alphabet": [
+    "A",
+    "C",
+    "G",
+    "U"
+  ],
+  "start": "p0",
+  "accept": [
+    "p3"
+  ],
+  "transitions": [
+    {
+      "from": "p0",
+      "symbol": "A",
+      "to": "p0"
+    },
+    {
+      "from": "p0",
+      "symbol": "C",
+      "to": "p0"
+    },
+    {
+      "from": "p0",
+      "symbol": "G",
+      "to": "p0"
+    },
+    {
+      "from": "p0",
+      "symbol": "U",
+      "to": "p0"
+    },
+    {
+      "from": "p0",
+      "symbol": "G",
+      "to": "p1"
+    },
+    {
+      "from": "p1",
+      "symbol": "A",
+      "to": "p2"
+    },
+    {
+      "from": "p1",
+      "symbol": "C",
+      "to": "p2"
+    },
+    {
+      "from": "p1",
+      "symbol": "G",
+      "to": "p2"
+    },
+    {
+      "from": "p1",
+      "symbol": "U",
+      "to": "p2"
+    },
+    {
+      "from": "p2",
+      "symbol": "A",
+      "to": "p3"
+    },
+    {
+      "from": "p2",
+      "symbol": "C",
+      "to": "p3"
+    },
+    {
+      "from": "p2",
+      "symbol": "G",
+      "to": "p3"
+    },
+    {
+      "from": "p2",
+      "symbol": "U",
+      "to": "p3"
+    }
+  ],
+  "descriptions": {
+    "p0": "waiting; guesses which G is 3rd from the end",
+    "p1": "guessed G",
+    "p2": "one more symbol",
+    "p3": "exactly two symbols after the guessed G"
+  }
+}

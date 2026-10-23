@@ -1,0 +1,6 @@
+>demo_mrna synthetic mRNA-like sequence (made up for demonstration; not a real gene)
+GGCAGGAGGUAACCAUGGCUGCUAAAGCUGGUAGCUAAUAAAGGCAUUUAUUUAGCGCGCAAUAAAGGG
+>hairpin_demo synthetic stem-loop candidate
+GGGAGCCAUCGAAAGAUGGCUCCC
+>dna_input written with T (enable "Treat T as U")
+ATGGCTTAAGGGTGACCC

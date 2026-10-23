@@ -1,0 +1,102 @@
+{
+  "type": "DFA",
+  "name": "contains AUG (BUGGY: forgets overlapping A)",
+  "states": [
+    "q0",
+    "q1",
+    "q2",
+    "q3"
+  ],
+  "alphabet": [
+    "A",
+    "C",
+    "G",
+    "U"
+  ],
+  "start": "q0",
+  "accept": [
+    "q3"
+  ],
+  "transitions": [
+    {
+      "from": "q0",
+      "symbol": "A",
+      "to": "q1"
+    },
+    {
+      "from": "q0",
+      "symbol": "C",
+      "to": "q0"
+    },
+    {
+      "from": "q0",
+      "symbol": "G",
+      "to": "q0"
+    },
+    {
+      "from": "q0",
+      "symbol": "U",
+      "to": "q0"
+    },
+    {
+      "from": "q1",
+      "symbol": "A",
+      "to": "q0"
+    },
+    {
+      "from": "q1",
+      "symbol": "C",
+      "to": "q0"
+    },
+    {
+      "from": "q1",
+      "symbol": "G",
+      "to": "q0"
+    },
+    {
+      "from": "q1",
+      "symbol": "U",
+      "to": "q2"
+    },
+    {
+      "from": "q2",
+      "symbol": "A",
+      "to": "q0"
+    },
+    {
+      "from": "q2",
+      "symbol": "C",
+      "to": "q0"
+    },
+    {
+      "from": "q2",
+      "symbol": "G",
+      "to": "q3"
+    },
+    {
+      "from": "q2",
+      "symbol": "U",
+      "to": "q0"
+    },
+    {
+      "from": "q3",
+      "symbol": "A",
+      "to": "q3"
+    },
+    {
+      "from": "q3",
+      "symbol": "C",
+      "to": "q3"
+    },
+    {
+      "from": "q3",
+      "symbol": "G",
+      "to": "q3"
+    },
+    {
+      "from": "q3",
+      "symbol": "U",
+      "to": "q3"
+    }
+  ]
+}

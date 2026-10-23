@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RNA × Theory of Computation</title>
+  <meta name="description" content="Analyze RNA sequences with finite automata, grammars and Turing machines — with explainable, step-by-step execution traces.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/theme-init.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="topbar">
+      <button class="nav-toggle btn ghost" type="button" aria-controls="sidebar" aria-expanded="false">Menu</button>
+      <a class="brand" href="#/">
+        <svg class="brand-mark" viewBox="0 0 40 24" aria-hidden="true">
+          <circle cx="7" cy="12" r="5.5"/><circle cx="33" cy="12" r="5.5"/><circle cx="33" cy="12" r="3"/>
+          <path d="M13 12h12"/><path d="M22 9l3 3-3 3"/>
+        </svg>
+        <span>RNA <span class="brand-x">×</span> Theory of Computation</span>
+      </a>
+      <div class="topbar-right">
+        <span id="server-status" class="server-status" role="status">Checking server…</span>
+        <button id="theme-toggle" class="btn ghost" type="button" aria-label="Colour theme">Theme: system</button>
+      </div>
+    </header>
+    <nav id="sidebar" class="sidebar" aria-label="Modules">
+      <ul class="nav-top">
+        <li><a href="#/" data-route="" title="Live DFA demo and a map of every module">Overview</a></li>
+      </ul>
+      <div class="nav-section">
+        <p class="nav-group" id="nav-g-rna">RNA Analysis</p>
+        <p class="nav-hint">Analyze a sequence with automata</p>
+        <ul aria-labelledby="nav-g-rna">
+          <li><a href="#/rna" data-route="rna" title="Validate a sequence; find codons, ORFs and motifs; export a report">RNA Analyzer</a></li>
+        </ul>
+      </div>
+      <div class="nav-section">
+        <p class="nav-group" id="nav-g-lab">Automata Lab</p>
+        <p class="nav-hint">Build, run, convert and verify DFAs/NFAs</p>
+        <ul aria-labelledby="nav-g-lab">
+          <li><a href="#/playground" data-route="playground" title="Define a DFA or NFA and step through its execution">Automata Playground</a></li>
+          <li><a href="#/convert" data-route="convert" title="ε-closures and the subset construction, step by step">ε-elimination &amp; NFA→DFA</a></li>
+          <li><a href="#/minimize" data-route="minimize" title="Table-filling minimization with distinguishing strings">DFA Minimization</a></li>
+          <li><a href="#/verify" data-route="verify" title="Prove two automata equivalent or find a counterexample">Verification Lab</a></li>
+        </ul>
+      </div>
+      <div class="nav-section">
+        <p class="nav-group" id="nav-g-ws">Workspace</p>
+        <ul aria-labelledby="nav-g-ws">
+          <li><a href="#/history" data-route="history" title="Saved analyses on this computer">History</a></li>
+          <li><a href="#/learn" data-route="learn" title="How the lab works, limits and API reference">Learn &amp; Docs</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main" class="main" tabindex="-1"></main>
+  </div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <div id="print-root" class="print-root"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
